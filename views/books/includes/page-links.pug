@@ -1,0 +1,14 @@
+ul.pageLinks
+    if (page != 1)
+        li.pageLink
+            a(href=`${url}page=${page-1}&size=${size}`) Prev
+    - for (let i=1; i<= pageCount; i++)
+        if (i == page)
+            li.pageLink.activePage
+                =i
+        else
+            li.pageLink
+                a(href=`${url}page=${i}&size=${size}`)= i
+    if (page != pageCount)
+        li.pageLink
+            a(href=`${url}page=${page+1}&size=${size}`) Next

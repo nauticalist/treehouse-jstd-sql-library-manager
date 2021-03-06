@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    h1= title
+    div(class="wrapper")
+        include includes/errors
+        form(action="/books", method="post")
+            include includes/form
+            p 
+                input(type="submit", class="btn-primary", value="Create New Book")
+            p 
+                a(class="button btn-secondary", href="/books") Cancel

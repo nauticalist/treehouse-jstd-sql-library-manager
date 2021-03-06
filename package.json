@@ -1,0 +1,26 @@
+{
+  "name": "library-manager",
+  "version": "1.0.0",
+  "description": "Project 8 Library manager app with nodejs, express...",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "sequelize",
+    "express"
+  ],
+  "author": "Ismail Aksoy <iaksoy@seanapse.io>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+  }
+}

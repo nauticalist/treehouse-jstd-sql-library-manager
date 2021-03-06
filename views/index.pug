@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    include books/includes/header
+
+    div(class="wrapper")
+        if (books.length <= 0)
+            include books/includes/no-data
+        else
+            if (searchQuery)
+                h3.search-results= `Search Results for ${searchQuery}`
+            include books/includes/table
+            if(pageCount != 1)
+                include books/includes/page-links
+        br

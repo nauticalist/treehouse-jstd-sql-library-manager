@@ -1,0 +1,23 @@
+extends layout-error.pug
+
+block content
+    #background
+    .top
+        h1= err.statusCode
+        h3 Oh! Noooo!
+    .container
+        .ghost-copy
+            .one
+            .two
+            .three
+            .four
+        .ghost
+            .face
+                .eye
+                .eye-right
+                .mouth
+        .shadow
+    .bottom
+        p= err.message
+        .buttons()
+            a(class="btn", href="/") Home
